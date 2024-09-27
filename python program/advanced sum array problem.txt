@@ -1,0 +1,26 @@
+def max_subarry_k_negatives(arr,k):
+    n=len(arr)
+    max_sum=float('-inf')
+    current_sum=0
+    start=0
+    neg_count=0
+
+    for end in range(n):
+        current_sum+=arr[end]
+        if arr[end]<0:
+           neg_count+=1
+           while neg_count>k:
+                 if arr[start]<0:
+                    neg_count-=1
+                 current_sum-=arr[start]
+                 start+=1
+           max_sum=max(max_sum,current_sum)
+     return max_sum
+
+
+arr=[4,-1,2,-3,5,-6,7]
+k=2
+print(max_subarray_k_negatives(arr,k))                
+                 
+         
+

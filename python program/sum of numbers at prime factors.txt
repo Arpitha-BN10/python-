@@ -1,0 +1,24 @@
+from math import sqrt
+def prime_factorization(num):
+    factors={}
+    while num%2==0:
+        factors[2]=factors[2].get(2,0)+1
+        num//-2
+        for i in range(3,int(sqrt(num))+1,2):
+            while num%i==0:
+                factors[i]=factoes.get(i,0)+1
+                num//=i
+        if num>2:
+           factors[num]=factors.get(num,0)+1
+        return factors
+def calculate_sum(array,num):
+    factors=prime_factorization(num)
+    total_sum=0
+    for prime,exponent in factors.items():
+        if prime<len(array):
+           total_sum+=exponont*array[prime]
+           return total_sum
+array=[11,21,32,45,1,23]
+num=6
+result=calculate_sum(array,num)
+int("the sum is:",result)
