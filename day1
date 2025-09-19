@@ -1,0 +1,137 @@
+#Even or odd
+#  n=int(input("Enter the number:"))
+# if n%2==0:
+#     print("even")
+# else:
+#     print("odd")
+
+#Gretest of three
+# a=int(input("Enter the number:"))
+# b=int(input("Enter the number:"))
+# c=int(input("Enter the number:"))
+# if a>b:
+#         print("a")
+# elif b>c:
+#         print("b")
+# else:
+#         print("c")
+
+#Movie
+# age=int(input("Enter your age:"))
+# if age>=18:
+#     print("You're allowed")
+#     if age>=75:
+#      print("You're life is risky")
+#     elif age>=45:
+#      print("Panic attack")
+#     elif age>=25:
+#      print("sit simply")
+#     else:
+#      print("Dont scream")
+# else:
+#     print("You're not allowed")
+
+#Watermelon
+# w=int(input("Enter weight"))
+# if w>2 and w%2==0:
+#         x=w//2
+#         if x%2==0:
+#             print(x,x)
+#         else:
+#             print(x-1,x+1)
+# else:
+#      print("no")
+
+#Elephant
+# x=int(input("Enter the posistion:"))
+# if x%5==0:
+#     print(x//5)
+# else:
+#     print(x//5+1)
+
+#FizzBuzz number
+# n=int(input("Enter the number:"))
+# if n%3==0 and n%5==0:
+#     print("it is a fizzbuzz number")
+# elif n%5==0:
+#     print("it is a buzz number")
+# else:
+#     print("it is a fizznumber")
+
+#Buzz number
+# n=int(input("Enter the number:"))
+# if n%7==0 or n%10==7:
+#      print("buzz")
+# else:
+#      print("it is not a buzz number")
+
+#To check same digit
+# n=int(input("Enter the number"))
+# if n%11==0:
+#      print("yes")
+# else:
+#      print("no")
+
+#To check 1st nd 2nd number
+# n=int(input("enter the number:"))
+# n1=n//10
+# n2=n%10
+# if n1==n2:
+#    print("yes")
+# else:
+#    print("no")
+
+#To print even no from 50 to 100
+# for i in range(50,101,2):
+#     print(i,end=" ")
+
+# Prime or not
+# n=int(input("enter a number:"))
+# for i in range(2,n):
+#       if n%i==0:
+#           print("not prime")
+#           break
+#       else:
+#           print("prime")
+
+#To get count prime number between 5-15
+# def isprime(n):
+#     for i in range(2,(n//2)+1):
+#         if n%i==0:
+#             return False
+#     return True
+# l=int(input("enter number"))
+# r=int(input("enter number"))
+# c=0
+# for i in range(l,r+1):
+#     if isprime(i):
+#         c+=1
+# print(c)
+
+#Sum of num of digits
+# n=int(input("Enter the number:"))
+# sum=0
+# while n>0:
+#       d=n%10
+#       sum=sum+d
+#       n=n//10
+# print(sum)
+
+#Counting of num
+# n=int(input("Enter the number:"))
+# count=0
+# while n>0:
+#       count+=1
+#       n=n//10
+# print(count)
+
+#Reverse integer
+# n=int(input("Enter the number:"))
+# rev=0
+# while n>0:
+#      d=n%10
+#      rev=rev*10+d
+#      n=n//10
+# print(rev)
+
+

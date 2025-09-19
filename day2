@@ -1,0 +1,195 @@
+#Bear
+#  limak,bob=map(int,input().split())
+# year=0
+# while limak<=bob:
+#     limak*=3
+#     bob*2
+#     year+=1
+# print(year)
+
+#Googly number 131,74,85
+# n=int(input("Enter number:"))
+# sum=0
+# while n:
+#     d=n%10
+#     sum=sum+d
+#     n=n//10
+# flag=0
+# for i in range(2,sum):
+#     if sum%i==0:
+#         flag+1
+# if flag==0:
+#     print("Googly")
+# else:
+#     print("Not googly")
+
+#Armstrong number
+# num=int(input("Enter number:"))
+# temp1=num
+# temp2=num
+# c=0
+# while temp1>0:
+#     c+=1
+#     temp1=temp1//10
+# arm=0
+# while temp2>0:
+#     d=temp2%10
+#     arm=arm+d**c
+#     temp2=temp2//10
+# if arm==num:
+#    print("Armstrong")
+# else:
+#     print("not armstrong")
+
+#Neon numbers
+# n=int(input("Enter num:"))
+# sqr=n*n
+# sum=0
+# while sqr>0:
+#     d=sqr%10
+#     sum=sum+d
+#     sqr=sqr//10
+# if sum==n:
+#     print("Neon number")
+# else:
+#     print("not neon")
+    
+#Magic number
+# n=int(input("enter num:"))
+# while n>9:
+#     sum=0
+#     while n>0:
+#         d=n%10
+#         sum+=d
+#         n//=10
+#     n=sum
+# if n==1:
+#     print("Magic number")
+# else:
+#     print("not magicnumber")
+
+#Composite number
+# n=int(input("Enter num:"))
+# if n<=1:
+#     print("not composite  num")
+# c=0
+# for i in range(1,n+1):
+#     if n%i==0:
+#         print(i,end=" ")
+#         c+=1
+# if c>2:
+#     print("composite")
+# else:
+#     print("not composite")
+
+#Perfect number
+# n=int(input("Enter number"))
+# sum=0
+# for i in range(1,n):
+#     if n%i==0:
+#         sum=sum+i
+# if n==sum:
+#     print("Perfect number")
+# else:
+#     print("not perfect")/
+
+#Niven num
+# n=int(input("Enter num:"))
+# sum=0
+# while n>0:
+#     d=n%10
+#     sum+=d
+#     n//=10
+# if n%sum==0:
+#     print("niven num")
+# else:
+#     print("not niven num")
+
+#Strong num
+# num=int(input("Enter num:"))
+# org_num=num
+# fact=1
+# sum=0
+# while num>0:
+#     d=num%10
+#     for i in range(1,d+1):
+#         fact=fact*i
+#     sum=sum+fact
+#     num=num//10
+#     fact=1
+# if org_num==sum:
+#     print("strong num")
+# else:
+#     print("not strong num")    
+
+#Spy num
+# num=int(input("Enter num:"))
+# sum=0
+# mul=1
+# while num>0:
+#     d=num%10
+#     sum+=d
+#     mul*=d
+#     num=num//10
+# if sum==mul:
+#     print("spy num")
+# else:
+#     print("not spy")
+
+#Merge list 
+# l1=list(map(int,input("enter list elements:").split()))
+# l2=list(map(int,input("enter list elements:").split()))
+# l3=l1+l2
+# l3.sort()
+# print(l3)
+
+#Swapping
+# l1=list(map(int,input("enter a elements:").split()))
+# l1[0],l1[-1]=l1[-1],l1[0]
+# print(l1)
+
+#print list after deleting duplicates
+# l=list(map(int,input("enter a elements:").split()))
+# l1=[]
+# for i in l:
+#     if i not in l1:
+#         l1.append(i)
+# print(l1)
+
+#list which has occured odd number of times
+# l=[1,3,5,2,4,3,1,5,2]
+# l1=[]
+# for i in l:
+#     if l.count(i)%2!=0 and i not in l1:
+#         l1.append(i)
+# print(l1)
+
+#Sum of 3 minimum elements
+# l=[1,6,3,2,0,8]
+# l.sort()
+# print(sum(l[:3]))
+
+#Sort the even num in descending to ascending & then odd num in ascending to descending
+# l=list(map(int,input("enter a elements:").split()))
+# even=[]
+# odd=[]
+# for i in l:
+#     if i%2==0:
+#         even.append(i)
+#     else:
+#         odd.append(i)
+# even.sort(reverse=True)
+# odd.sort()
+# res=even+odd
+# print(res)
+
+#Single list
+# l=[1,3,5,6,7,9,10,2,4]
+# l.sort()
+# l1=[]
+# for i in  l:
+#     if i%2==0:
+#         l1.insert(0,i)
+#     else:
+#         l1.append(i)
+# print(l1)
