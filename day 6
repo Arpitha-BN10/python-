@@ -1,0 +1,216 @@
+# s="abba"
+# m=0
+# for c in range(len(s)):
+#     l,r=c,c
+#     while l>=0 and r<len(s) and s[l]==s[r]:
+#         m=max(m,r-1+1)
+#         l-=1
+#         r+=1
+#     l,r=c,c+1
+#     while l>=0 and r<len(s) and s[l]==s[r]:
+#         m=max(m,r-l+1)
+#         l-=1
+#         r+=1
+# print(m)
+
+# def qwer():
+#     print("hi")
+# def asd():
+#     print("hello")
+# qwer()
+# asd()
+
+# def qwer():
+#     print("hi")
+# def asd():
+#     print("hello")
+#     qwer()
+# qwer()
+# print(2)
+
+#required arguments
+# def qwer(x,y):
+#     print("hi",x,y)
+# qwer(10,20)
+
+# def qwer(x,y):
+    #  print(x,"hi",y)
+# qwer(y=10,x=20)
+
+# def qwer(x,y=80):
+#      print(x,y,"hi")
+# qwer(10)
+
+#error
+# def qwer(x=5,y):
+#      print(x,y,"hello")
+# qwer(40,30)
+
+#variable no of arguments
+# def qwer(y,z,*x):
+#     print(x,"hey",y,z)
+# qwer(3,5,6,1,2,8)
+
+#1usage
+# def qwer(x):
+#     print(x,"hi")
+#     return 30
+# c=qwer(10)+600
+# print(c)
+
+#2usage
+# def qwer(x):
+#     if(x==6):
+#         return
+#     print(x)
+#     qwer(x+1)
+# qwer(1)
+
+#find the sq of num(n*n) using function
+# def sq(n):
+#     print(n*n)
+# n=int(input())
+# result=sq(n)
+# print(result)
+
+#using lambda n*n
+# s=lambda n:n*n
+# n=int(input())
+# res=s(n)
+# print(res)
+
+# f=lambda a,b:a+b
+# n=int(input())
+# m=int(input())
+# result=f(n,m)
+# print(result)
+
+#using function
+# def even(n):
+#     return n%2==0
+# nums=[1,2,3,4,5,6,7,8,9]
+# evens=list(filter(even,nums))
+# print(evens)
+
+#w/o using function
+# nums=[1,2,3,4,5,6,7,8,9]
+# evens=list(filter(lambda n:n%2==0,nums))
+# print(evens)
+
+# def update(n):
+#     return n*2
+# nums=[1,2,3,4,5,6,7,8,9]
+# evens=list(filter(lambda n:n%2==0,nums))
+# doubles=list(map(update,evens))
+# print(doubles)
+
+#Using lambda
+# nums=[1,2,3,4,5,6,7,8,9]
+# evens=list(filter(lambda n:n%2==0,nums))
+# doubles=list(map(lambda n:n*2,evens))
+# print(doubles)
+
+#lambda
+# from functools import reduce
+# nums=[1,2,3,4,5,6,7,8,9]
+# evens=list(filter(lambda n:n%2==0,nums))
+# doubles=list(map(lambda n:n*2,evens))
+# num=reduce(lambda a,b:a+b,doubles)
+# print(doubles)
+# print(num)
+
+#Tail recursion
+# def nums(n):
+#     if n==0:
+#         return
+#     print(n,end=" ")
+#     nums(n-1)
+# n=int(input())
+# nums(n)
+
+#Head recursion
+# def nums(n):
+#     if n==0:
+#        return 
+#     nums(n-1)
+#     print(n,end=" ")
+# n=int(input())
+# nums(n)
+
+#
+# def print_desc(n):
+#     if n == 0:
+#         return
+#     print(n, end='')
+#     print_desc(n - 1)
+
+# def print_asc(n, limit):
+#     if n > limit:
+#         return
+#     print(n, end='')
+#     print_asc(n + 1, limit)
+
+# def print_pattern():
+#     print_desc(5)       
+#     print_asc(2, 5)     
+
+# print_pattern()
+
+#Factorial
+# def fact(n):
+#     if n==0 or n==1:
+#         return 1
+#     else:
+#         return fact(n-1)*n
+# n=int(input())
+# print(fact(n))
+
+#Palidrome
+# def is_palindrome(n,rev=0,temp=None):
+#      if temp is None:
+#           temp=n
+#      if n==0:
+#         return temp==rev
+#      return is_palindrome(n//10,rev*10+n%10,temp)
+# num=int(input())
+# print(is_palindrome(num))
+
+#reverse of a num using recursion:
+# def rev_num(n,rev=0):
+#     if n==0:
+#         return rev
+#     return rev_num(n//10,rev*10+n%10)
+# num=int(input())
+# print(rev_num(num))
+
+#Check given input is perfect square or not
+# def is_square(n):
+#     if n<0:
+#         return False
+#     root=int(n**0.5)
+#     return n==root*root
+# num=int(input())
+# print(is_square(num))
+
+#power of two or not
+# def is_power_of_two(n):
+#     if n==1:
+#         return True
+#     if n==0 or n%2!=0:
+#         return False
+#     return is_power_of_two(n//2)
+# n=int(input())
+# print(is_power_of_two(n))
+
+
+#find power of 2 num
+# def power(a,b):
+#     if b==0:
+#         return 1
+#     return a*power(a,b-1)
+# num1=int(input())
+# num2=int(input())
+# print(power(num1,num2))
+
+
+    

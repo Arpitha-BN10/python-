@@ -1,0 +1,41 @@
+#Reduce the num to 1
+# def fun(n):
+#     if n==1:
+#         return 0
+#     elif n%2==0:
+#         return 1+fun(n//2)
+#     else:
+#         return 1+min(fun(n-1),fun(n+1))
+# n=int(input("Enter the num:"))
+# print(fun(n))
+
+#Push
+# stack=[]
+# stack.append(3)
+# stack.append(5)
+# stack.append(6)
+# stack.append(9)
+# stack.append(1)
+# print(stack)
+
+#Pop
+# stack=[]
+# stack.append(3)
+# stack.append(5)
+# stack.append(6)
+# stack.append(9)
+# stack.append(1)
+# stack.pop()
+# print(stack)
+
+#example:
+# s='ab*c**def'
+# stack=[]
+# for i in s:
+#     if i!='*':
+#         stack.append(i)
+#     else:
+#         stack.pop()
+# x="".join(stack)
+# print(x)
+
